@@ -424,6 +424,8 @@
     
     #ma-page{            
       margin : 25px 60px 0px 60px;
+      max-width: 992px;
+      min-width: 768px;
     }
     
     #recherche-et-filtres{
