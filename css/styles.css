@@ -425,9 +425,12 @@
     #ma-page{            
       margin : 25px 60px 0px 60px;
       max-width: 992px;
-      min-width: 768px;
     }
     
+    nav a {
+      margin-right: 40px;
+    }
+
     #recherche-et-filtres{
       width: 96%;
       margin-right: 90px;
@@ -491,10 +494,11 @@
               /*média query pour téléphone portable*/
               /*média query pour téléphone portable*/
 
-    @media screen and (max-width : 768px) {
+    @media screen and (max-width : 767px) {
 
       #ma-page{
         margin: 50px 0px 0px 0px;
+        max-width: 768px;
       }
 
       .en-tete{
@@ -647,7 +651,7 @@
         margin: 0px 0px 30px 0px;
         padding: 8px 60px 50px 55px;
         border-radius: 0px;
-        width: 95%;
+        width: 88%;
         height: auto;
       }
 
@@ -710,7 +714,7 @@
         padding: 0px 55px 50px 55px;
         background-color: #FFFFFF;     
         border-radius: 40px;
-        width: 92%;
+        width: 88%;
         height: auto;
       }
     
@@ -764,7 +768,7 @@
         margin: 0px 0px 30px 0px;
         padding: 0px 55px 50px 55px;
         border-radius: 40px;
-        width: 92%;
+        width: 88%;
         height: auto;
       }
     
