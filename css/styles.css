@@ -422,18 +422,24 @@
 
   @media screen and (min-width : 768px) and (max-width : 992px) {
     
-    #ma-page{            
-      margin : 25px 60px 0px 60px;
+    #ma-page{     
       max-width: 992px;
-    }
+      min-width: 768px;
+      margin: 44px 40px 0px 40px;
+   }       
+      
     
-    nav a {
-      margin-right: 40px;
+    #en-tete{
+      width: 120%;
     }
 
     #recherche-et-filtres{
       width: 96%;
       margin-right: 90px;
+    }
+
+    #zone-des-filtres{
+      margin: 0px 0px 40px 0px;
     }
 
     #separateur-boutons-filtres{
@@ -448,7 +454,7 @@
     }
 
     #bloc-hebergements{
-      width: 88%;
+      width: 110%;
     }
     
     .disposition-cartes-populaires{
@@ -462,7 +468,7 @@
     }
 
     #bloc-populaires{
-      width: 88.5%;
+      width: 110%;
       height: 40%;
       margin-left: 0px;
     }
@@ -472,7 +478,7 @@
     }
 
     #bloc-activites{
-      width: 95%;
+      width: 118.5%;
       padding-top: 0px;
     }
 
@@ -480,6 +486,7 @@
       justify-content: space-around;
       margin-right: 54px;
       padding:0px;
+      width: 118%;
     }
 
     .bloc-pied-de-page{
@@ -651,7 +658,7 @@
         margin: 0px 0px 30px 0px;
         padding: 8px 60px 50px 55px;
         border-radius: 0px;
-        width: 88%;
+        width: 95%;
         height: auto;
       }
 
@@ -802,18 +809,9 @@
         padding-bottom: 25px;
       }       
 
-
-
-
-
-
-
-
-
-
       #pied-de-page{
         flex-direction: column;
-        width: 98%;
+        width: 100%;
       }
 
       .bloc-pied-de-page{
