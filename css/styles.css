@@ -68,6 +68,11 @@
     margin-right: 77px;
   }
 
+  #liens-en-tete{
+    display: flex;
+    flex-direction: row;
+  }
+  
   #liens-en-tete a{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
