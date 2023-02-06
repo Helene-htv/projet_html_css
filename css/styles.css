@@ -10,7 +10,7 @@
   }
 
   header{
-    width: 100%;
+    width: 100% !important;
   }
 
   /*Ci-dessous sont regrupés le code de la police css qui se répète plusieurs fois*/
@@ -567,7 +567,7 @@
 
       #liens-en-tete{
         font-size: 2.3em;
-        /* justify-content: center; */
+        justify-content: space-around;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -583,6 +583,7 @@
         height: 150px;
         border-top: 2px solid transparent; 
         border-bottom: 2px solid #F2F2F2;
+        width: 350px;
       } 
 
       #liens-en-tete a:hover{
@@ -598,17 +599,17 @@
       }
 
       #contenu-principal h1{
-        font-size: 3.2em;
+        font-size: 2.6em;
         margin-bottom: 30px;
       }
 
       p{
-        font-size: 2.1em;
+        font-size: 1.8em;
       }
 
       #recherche-et-filtres{
         margin: 80px 20px 0px 45px;
-        width: 768px;
+        /* width: 768px; */
       }
       
       #barre-de-recherche{
