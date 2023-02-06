@@ -64,6 +64,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    /* width: 100%; */
   }
 
   nav a{
@@ -107,6 +108,7 @@
   /*Partie du corps de ma page avec 3 sections*/
   #contenu-principal{
     margin : 63px 0px 60px 0px;
+    width: 100%;
   }
 
   /*Première section*/
@@ -418,6 +420,7 @@
     display: flex;
     flex-direction: row;
     padding: 30px 0px 50px 50px;
+    width: 100%;
   }
 
   ul{
@@ -525,20 +528,19 @@
               /*média query pour téléphone portable*/
 
     @media screen and (max-width : 767px) {
-/* 
-      *{
-        box-sizing: border-box;
-      } */
 
-      #ma-page{
-        margin: 50px 0px 0px 0px;
+      
+
+      body{
+        /* margin: 50px 0px 0px 0px; */
         max-width: 768px;
-        min-width: 0px;
+        width: 100vw;
+        /* min-width: 0px; */
       }
 
-      #en-tete{
+      /* #en-tete{
         width: 768px;
-      }
+      } */
 
       #logo{
         margin-bottom: 110px;
@@ -550,24 +552,16 @@
         /* text-align: center; */
       }
 
-      /* a{
-        margin-left: 50px;
-      } */
-
       #en-tete img{
         width : 155px;
         height : auto;
       }
 
-      /* #liens-en-tete .mot {
-        text-align: center;
-      } */
-
       nav{
         flex-direction: column;
         margin: 0px;
         padding: 0px;
-        width: 768px;
+        /* width: 768px; */
       }
 
 
@@ -582,14 +576,13 @@
 
        #liens-en-tete a {
         padding: 0 !important;
-         margin:auto !important;
-         display:flex;
+        margin:auto !important;
+        display:flex;
         justify-content: center;
         align-items: center;
-
         height: 150px;
         border-top: 2px solid transparent; 
-   
+        border-bottom: 2px solid #F2F2F2;
       } 
 
       #liens-en-tete a:hover{
@@ -601,7 +594,7 @@
 
       #contenu-principal{
         margin : 40px 0px 0px 0px;
-        width: 768px;
+        /* width: 768px; */
       }
 
       #contenu-principal h1{
