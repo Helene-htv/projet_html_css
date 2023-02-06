@@ -3,12 +3,14 @@
 
   
 
-  #ma-page {            /*résolution de la taille minimale et maximale*/
+  body {            /*résolution de la taille minimale et maximale*/
     max-width: 1400px;
-    min-width: 992px;
-    margin-top: 44px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100vw;
+    margin:auto;
+  }
+
+  header{
+    width: 100%;
   }
 
   /*Ci-dessous sont regrupés le code de la police css qui se répète plusieurs fois*/
@@ -54,6 +56,7 @@
   #en-tete img{
     width : 61.09px;
     height : 19px;
+    padding-top: 50px;
   } 
 
   nav{
@@ -81,27 +84,25 @@
     color:black;
   }
 
-  #liens-en-tete a:hover{
+   #liens-en-tete a:hover{
     font-family: 'Raleway', sans-serif;
-    color:#0065FC;
+    color:#0065FC; 
   }
 
-  .barre-bleue {
-    position: absolute;
-    margin-left: -21px;
-    top: 0;
-    background: #0065FC;
-    width: 162px;
-    height: 2px;
-    opacity: 0;
+  #liens-en-tete a {
+    padding: 0 !important;
+    /* margin:auto !important; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-top: 2px solid transparent;
   }
 
-  #liens-en-tete a:hover .barre-bleue {
-    opacity: 1;
-}
-
-  
-      
+  #liens-en-tete a:hover{
+    height: 150px;
+    border-top: 2px solid #0065FC;
+  }
 
   /*Partie du corps de ma page avec 3 sections*/
   #contenu-principal{
@@ -445,8 +446,8 @@
     
     #ma-page{     
       max-width: 992px;
-      min-width: 768px;
-      margin: 44px 40px 0px 40px;
+      /* min-width: 768px; */
+      margin: 0px 40px 0px 40px;
    }       
       
     
@@ -579,36 +580,23 @@
         min-width: 0;
       }
 
-      
+       #liens-en-tete a {
+        padding: 0 !important;
+         margin:auto !important;
+         display:flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 150px;
+        border-top: 2px solid transparent; 
    
-           
-      .barre-bleue {
-        display: flex;
-        position: relative;
-        margin: 0;
-        padding: 0;
-        top: auto;
-        bottom: -80px;
-        background: #F2F2F2;
-        width: 100%;
-        height: 3px;
-        opacity: 1;
+      } 
+
+      #liens-en-tete a:hover{
+        height: 150px;
+        border-top:none;
+        border-bottom: 2px solid #0065FC;
       }
-
-      /* #liens-en-tete .barre-bleue:hover {
-        background-color:#0065FC;
-        opacity: 1;
-      } */
-
-      /* #liens-en-tete a:hover .barre-bleue {
-        color:#0065FC;
-        
-        opacity: 1;
-      }  */
-
-      #ma-page a:hover .barre-bleue {
-        background: #0065FC;
-    }
       
 
       #contenu-principal{
