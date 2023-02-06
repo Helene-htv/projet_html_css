@@ -465,6 +465,7 @@
 
     #separateur-boutons-filtres{
       margin-right: 25px;
+      /* width: 768px; */
     }
     #filtre{
       margin-right: 20px;  
@@ -605,6 +606,9 @@
         opacity: 1;
       }  */
 
+      #ma-page a:hover .barre-bleue {
+        background: #0065FC;
+    }
       
 
       #contenu-principal{
