@@ -372,7 +372,7 @@
 
   #cartes-hebergements-et-populaires{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
   /*Troisième section*/
