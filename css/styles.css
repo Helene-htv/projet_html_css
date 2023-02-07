@@ -6,7 +6,7 @@
 
   #ma-page {            /*résolution de la taille minimale et maximale*/
     max-width: 1400px;
-    width: 90%;
+    width: 100%;
     margin:auto;
   }
 
@@ -533,7 +533,7 @@
 
       #ma-page{
         max-width: 768px;
-      }
+       }
 
       header{
         height: 265px;
@@ -574,7 +574,7 @@
       }
 
       #contenu-principal{
-        margin : 40px 0px 0px 0px;
+        margin : 30px 0px 0px 0px;
         width: 100%;
       }
 
@@ -588,8 +588,7 @@
       }
 
       #recherche-et-filtres{
-        width: 100%;
-        /* margin: 80px 20px 0px 45px; */
+        margin: 80px 20px 58px 45px;
       }
       
       #barre-de-recherche{
@@ -598,23 +597,23 @@
 
       #barre-loupe{   /*zone de recherche  */
         display: flex;
-        margin: 100px 0px 70px 0px; 
+        margin: 70px 0px 60px 0px; 
       }
 
       #icone-localisation-loupe{
         width: 100px;
-        height: 100px;
+        height: 90px;
         border-radius: 38px 0px 0px 38px; 
       }
     
       .fa-location-dot{
-        padding: 28px 0px 0px 38px; 
-        font-size: 2.5em;
+        padding: 24px 0px 0px 35px; 
+        font-size: 2.25em;
       }
     
       #saisie-loupe{     /*ici la zone de la saisie de notre recherche de la ville de notre hébergement*/
-        width:350px;
-        height: 100px;
+        width:100%;
+        height: 90px;
         font-size: 2.8em;
         padding-left: 30px;
         background-color: #FFFFFF;
@@ -623,19 +622,11 @@
     
       #loupe{    /* bouton cliquable pour valider notre recherche */
         width: 100px;
-        height: 100px;
+        height: 90px;
         margin-top: 0px;  /* marge en haut de 0px */
         background-color:#0065FC;
         border: 1px solid #0065FC;
         border-radius: 0px 38px 38px 0px;
-      }
-
-      #bloc-a-la-ligne{
-        display: block;
-      }
-
-      #bloc-a-la-ligne-2{
-        padding-left: 60px;
       }
 
       #zone-des-filtres{
@@ -643,13 +634,13 @@
       }
       
       #filtre{
-        font-size: 2.1em;
+        font-size: 1.875em;
       }
 
       #separateur-boutons-filtres{
         display: grid;
         grid-template-columns: 2fr 2fr;
-        grid-template-rows: 125px 125px ;
+        grid-template-rows: 105px 105px ;
         gap: 30px;
         margin: 23px 0px 60px 0px;
         width: 98%;
@@ -659,31 +650,28 @@
         font-size: 1.5em;
         border: 5px solid #D9D9D9;
         border-radius: 60px; 
-        height: 125px;
-        width: 98%;
+        height: 90px;
+        width: 100%;
       }
         
       #familial{
-        width: 98%;
+        width: 100%;
       } 
         
       #animauxautorises{
-        width: 98%;
+        width: 100%;
       }
       
       button{
         margin-right: 0px;
       }
-      button i{ /*Icones de la zone des filtres*/
-        font-size: 1.6em;
-      }
-
+    
       .fa-info{
         font-size: 0.8em;
         border: 3px solid #D9D9D9;
         border-radius: 40px;
         margin: 0px 10px 10px 10px;
-        padding: 16px 25px 16px 25px;
+        padding: 11px 20px 11px 20px;
       } 
       
       #cartes-hebergements-et-populaires{
@@ -692,18 +680,18 @@
       }
 
       #cartes-hebergements-et-populaires h2{
-        font-size: 2.6em;
+        font-size: 2em;
       }
 
       #cartes-hebergements-et-populaires p{
-        font-size: 2.2em;
+        font-size: 1.6em;
       }
      
       #bloc-populaires{
         margin: 0px 0px 30px 0px;
         /* padding: 8px 50px 50px 55px; */
         border-radius: 0px;
-        width: 96%;
+        width: 100%;
         height: auto;
       }
 
@@ -766,7 +754,7 @@
         /* padding: 0px 55px 50px 55px; */
         background-color: #FFFFFF;     
         border-radius: 40px;
-        width: 96%;
+        width: 100%;
         height: auto;
       }
     
@@ -820,7 +808,7 @@
         margin: 0px 0px 30px 0px;
         padding: 0px 0px 50px 55px;
         border-radius: 40px;
-        width: 96%;
+        width: 100%;
         height: auto;
       }
     
@@ -856,7 +844,7 @@
 
       #pied-de-page{
         flex-direction: column;
-        width: 96%;
+        width: 100%;
       }
 
       .bloc-pied-de-page{
