@@ -1,16 +1,21 @@
                         /*code css pour le desktop*/
                         /*code css pour le desktop*/
+ *{
+  box-sizing: border-box;
+ }
 
-  
-
-  body {            /*résolution de la taille minimale et maximale*/
+  #ma-page {            /*résolution de la taille minimale et maximale*/
     max-width: 1400px;
-    width: 100vw;
+    width: 90%;
     margin:auto;
   }
 
   header{
-    width: 100% !important;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
   }
 
   /*Ci-dessous sont regrupés le code de la police css qui se répète plusieurs fois*/
@@ -53,31 +58,36 @@
   }
 
   /* Partie en-tête de ma page avec le logo et la barre de navigation*/
-  #en-tete img{
-    width : 61.09px;
-    height : 19px;
-    padding-top: 50px;
+  .logo{
+    width : 70px;
   } 
 
-  nav{
+  nav ul{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    /* width: 100%; */
+    padding: 0;
+    margin: 0;
+  }
+
+  li{
+    list-style-type: none;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 
   nav a{
-    margin-left: 5px;
-    margin-right: 77px;
-  }
-
-  #liens-en-tete{
-    display: flex;
-    flex-direction: row;
-  }
-
-  #liens-en-tete a{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-weight: 500;
@@ -85,25 +95,13 @@
     color:black;
   }
 
-   #liens-en-tete a:hover{
-    font-family: 'Raleway', sans-serif;
-    color:#0065FC; 
-  }
 
-  #liens-en-tete a {
-    padding: 0 !important;
-    /* margin:auto !important; */
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    border-top: 2px solid transparent;
-  }
-
-  #liens-en-tete a:hover{
-    height: 150px;
+   nav a:hover{
     border-top: 2px solid #0065FC;
+    color: #0065FC;
+    padding-top: 38px;
   }
+
 
   /*Partie du corps de ma page avec 3 sections*/
   #contenu-principal{
@@ -180,6 +178,7 @@
 
   #separateur-boutons-filtres{
     display: flex;
+    width: 100%;
   }
 
   #filtre{
@@ -232,8 +231,8 @@
     padding: 8px 35px 0px 35px;
     background: #F2F2F2;
     border-radius: 20px;
-    width: 65%;
-    height: 65%;
+    width: 70%;
+    /* height: 65%; */
   }
 
   #bloc-hebergements h1{
@@ -293,7 +292,7 @@
     background: #F2F2F2;
     border-radius: 20px;
     width: 28%;
-    height: 65%;
+    /* height: 65%; */
     
   }
 
@@ -450,18 +449,10 @@
     
     #ma-page{     
       max-width: 992px;
-      /* min-width: 768px; */
-      margin: 0px 40px 0px 40px;
-   }       
-      
-    
-    #en-tete{
-      width: 120%;
-    }
-
+    }       
+     
     #recherche-et-filtres{
-      width: 96%;
-      margin-right: 90px;
+      width: 100%;
     }
 
     #zone-des-filtres{
@@ -470,8 +461,18 @@
 
     #separateur-boutons-filtres{
       margin-right: 25px;
-      /* width: 768px; */
+      width: 95%;
     }
+
+    .boutons-des-filtres{
+      margin-right: 40px;
+      font-size: 0.830em;
+    }
+
+    button i{
+      font-size: 0.875em;
+    }
+
     #filtre{
       margin-right: 20px;  
     }
@@ -481,7 +482,7 @@
     }
 
     #bloc-hebergements{
-      width: 110%;
+      width: 100%;
     }
     
     .disposition-cartes-populaires{
@@ -495,7 +496,7 @@
     }
 
     #bloc-populaires{
-      width: 110%;
+      width: 100%;
       height: 40%;
       margin-left: 0px;
     }
@@ -505,7 +506,7 @@
     }
 
     #bloc-activites{
-      width: 118.5%;
+      width: 100%;
       padding-top: 0px;
     }
 
@@ -513,7 +514,7 @@
       justify-content: space-around;
       margin-right: 54px;
       padding:0px;
-      width: 118%;
+      width: 100%;
     }
 
     .bloc-pied-de-page{
@@ -530,72 +531,51 @@
 
     @media screen and (max-width : 767px) {
 
-      
-
-      body{
-       
+      #ma-page{
         max-width: 768px;
-        width: 100vw;
-        
       }
 
-    
-
-      #logo{
-        margin-bottom: 110px;
-      }
-
-      nav a{
-        margin-right: 238px;
-        padding-left: 50px;
-      
-      }
-
-      #en-tete img{
-        width : 155px;
-        height : auto;
-      }
-
-      nav{
+      header{
+        height: 265px;
+        padding: 0;
         flex-direction: column;
-        margin: 0px;
-        padding: 0px;
-       
-      }
-
-
-      #liens-en-tete{
-        font-size: 2.3em;
-        justify-content: space-around;
+        text-align: center;
         width: 100%;
         margin: 0;
-        padding: 0;
-        min-width: 0;
       }
-
-       #liens-en-tete a {
-        padding: 0 !important;
-        margin:auto !important;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        height: 150px;
-        border-top: 2px solid transparent; 
-        border-bottom: 3px solid #F2F2F2;
-        width: 360px;
-        font-size: 0.9em;
-      } 
-
-      #liens-en-tete a:hover{
-        height: 150px;
-        border-top:none;
-        border-bottom: 3px solid #0065FC;
+    
+      .logo {
+        width: 35%;
+        padding: 40px 30px 0px 30px;
       }
       
+      nav{
+        width: 100%;
+        text-align: center;
+      }
+
+      nav li {
+        flex-basis: 100%;
+      }
+
+      nav a {
+        display: block;
+        font-size: xx-large;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 25px;
+        margin: 0;
+      }
+
+      nav a:hover{
+        border-top: 0;
+        border-color: #0065FC;
+        margin: 0;
+        padding: 0 0 25px 0;
+      }
+
       #contenu-principal{
         margin : 40px 0px 0px 0px;
         width: 100%;
-        /* width: 768px; */
       }
 
       #contenu-principal h1{
@@ -608,8 +588,8 @@
       }
 
       #recherche-et-filtres{
-        margin: 80px 20px 0px 45px;
-        /* width: 768px; */
+        width: 100%;
+        /* margin: 80px 20px 0px 45px; */
       }
       
       #barre-de-recherche{
@@ -618,8 +598,7 @@
 
       #barre-loupe{   /*zone de recherche  */
         display: flex;
-        margin: 100px 0px 70px 0px;  
-        /* width: 80%; */
+        margin: 100px 0px 70px 0px; 
       }
 
       #icone-localisation-loupe{
